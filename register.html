@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <style>
+    #form{
+      position:absolute;
+    border: solid black 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50px;
+    padding: 15px;
+    background-color: rgba(40, 134, 229, 0.484);
+    height: 240px;
+    width: auto;
+    left:40%;
+    right:auto;
+    top: 120px;
+    
+    }
+  </style>
+</head>
+<body>
+  <div id="form">
+    <form action="http://localhost:8090/ProJect/reg.php" method="post">
+      Name: <input type="text" name="name"/><br><br>
+      Email: <input type="email" name="Email"/><br><br>
+      Password: <input type="password" name="pass"/><br><br>
+      Role: <select name="role">
+        <option value="User">User</option>
+        <option value="Staff">Staff</option>
+        <option value="Admin">Admin</option>
+      </select><br><br>
+      <input type="submit" value="Register"  style="position: absolute; left:40%; right:auto; " /></br></br>
+      <span>If registered go to login📎<a href="login.html">Login</a></span>
+    </form>
+  </div>
+</body>
+</html>

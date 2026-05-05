@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+<style>
+  #login{
+    position:absolute;
+    border: solid black 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50px;
+    padding: 15px;
+    background-color: rgba(40, 134, 229, 0.484);
+    height: 240px;
+    width: auto;
+    left:40%;
+    right:auto;
+    top: 120px;
+    
+  }
+</style>
+</head>
+<body>
+  <div id="login">
+    <form action="http://localhost:8090/ProJect/log.php" method="post">
+  Email: <input type="email" name="Email"/><br><br>
+  Password:<input type="password" name="password"/><br><br>
+  <input style="position: absolute; left:40%; right:auto;" type="submit" value="Login"/><br></br>
+    <span style="font-family: 'Courier New', Courier, monospace; color: rgb(255, 0, 0); font-weight: bold;"><i>If not registered!!!</i> <a href="register.html">Click Here</a></span>
+  </div>
+</form>
+
+</body>
+</html>
